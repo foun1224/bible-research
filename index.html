@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吉卜力風格聖經閱讀器</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="ghibli-header">
+            <h1>聖經閱讀器</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="搜尋經文 (例如: 創1:1 或關鍵字)">
+                <button id="searchBtn">搜尋</button>
+            </div>
+        </header>
+        
+        <main>
+            <div class="bible-navigator">
+                <select id="bookSelect">
+                    <option value="">選擇書卷</option>
+                </select>
+                <select id="chapterSelect">
+                    <option value="">選擇章節</option>
+                </select>
+            </div>
+            
+            <div class="content-container">
+                <div id="bibleContent" class="bible-content">
+                    <!-- 經文內容將在這裡動態載入 -->
+                </div>
+            </div>
+        </main>
+
+        <div class="ghibli-decorations">
+            <div class="totoro"></div>
+            <div class="dust-sprite"></div>
+        </div>
+    </div>
+
+    <script src="public/js/bible.js"></script>
+    <script src="public/js/main.js"></script>
+</body>
+</html>
